@@ -1,64 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./output.css" />
-  </head>
-  <body class="bg-[#90b3c8] pt-[85px]">
-    <div class="container-lg px-[60px] pt-[40px] bg-white rounded-t-[20px]">
-      <header>
-        <nav
-          class="flex items-center justify-between pb-[40px] border-b-[#EAEAEA] border-b-[1px]"
-        >
-          <div>
-            <h1 class="font-bold text-[20px]">CR7 SNEAKERS SUII</h1>
-            <p class="text-[#9D9D9D] text-[14px] mt-[-6px]">
-              Магазин лучших кроссовок
-            </p>
-          </div>
 
-          <div>
-            <button
-              class="py-[5px] px-[15px] rounded-md border-[2px] border-slate-200 active:border-slate-400"
-            >
-              🛒
-            </button>
-            <button
-              class="py-[5px] px-[15px] rounded-md border-[2px] border-slate-200 active:border-slate-400"
-            >
-              ❤️
-            </button>
-            <button
-              class="py-[5px] px-[15px] rounded-md border-[2px] border-slate-200 active:border-slate-400"
-            >
-              👤
-            </button>
-          </div>
-        </nav>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./output.css" />
+</head>
 
-      <main class="pt-[40px]">
-        <swiper-container
-          class="mySwiper"
-          pagination="true"
-          pagination-clickable="true"
-          navigation="true"
-          space-between="30"
-          centered-slides="true"
-          autoplay-delay="2500"
-          autoplay-disable-on-interaction="false"
-        >
-          <swiper-slide><img src="./assets/menu.png" alt="menu img" /></swiper-slide>
-          <swiper-slide><img src="./assets/menu.png" alt="menu img" /></swiper-slide>
-          <swiper-slide><img src="./assets/menu.png" alt="menu img" /></swiper-slide>
-        </swiper-container>
-      </main>
+<body class="bg-[#90b3c8] pt-[85px]">
+  <div id="modal" class="hidden p-[30px] h-[100vh] w-[385px] absolute right-0 top-0 bg-white z-50">
+    <h1 class="font-bold text-[24px] mb-[30px]">Корзина</h1>
+
+    <div class="korzina-wrappper">
+      <div
+        class="border-[#F3F3F3] border-[2px] rounded-[20px] py-[10px] px-[20px]  overflow-hidden flex items-center justify-between">
+        <div class="w-[100px] flex items-center justify-center overflow-hidden">
+          <img src="./assets/image 5-10.png" alt="" class="w-full h-full m-auto mt-[-10px]" />
+        </div>
+
+        <div>
+          <h1 class="text-[15px] mb-[14px]">tapchka</h1>
+          <p class="mt-[-9px] text-[14px] font-bold">123123rub</p>
+        </div>
+        <button
+          class="border-[#F3F3F3] border-[2px] px-[10px] py-[6px] rounded-lg flex items-center justify-center  active:border-slate-300">
+          ➕
+        </button>
+
+      </div>
     </div>
+  </div>
+  <div class="h-[100vh] w-[100%] absolute top-0 left-0 bg-[rgba(0,0,0,0.5)] z-10 backdrop-blur-[2px]"></div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
-    <script type="module" src="./app.js"></script>
-    <script type="module" src="./data.js"></script>
-  </body>
+  <div class="container-lg px-[60px] pt-[40px] bg-white rounded-t-[20px]">
+    <header>
+      <nav class="flex items-center justify-between pb-[40px] border-b-[#EAEAEA] border-b-[1px]">
+        <div>
+          <h1 class="font-bold text-[20px]">CR7 SNEAKERS SUII</h1>
+          <p class="text-[#9D9D9D] text-[14px] mt-[-6px]">
+            Магазин лучших кроссовок
+          </p>
+        </div>
+
+        <div>
+          <button class="py-[5px] px-[15px] rounded-md border-[2px] border-slate-200 active:border-slate-400">
+            🛒
+          </button>
+          <button class="py-[5px] px-[15px] rounded-md border-[2px] border-slate-200 active:border-slate-400">
+            ❤️
+          </button>
+          <button class="py-[5px] px-[15px] rounded-md border-[2px] border-slate-200 active:border-slate-400">
+            👤
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="pt-[40px] pb-[40px]">
+      <swiper-container class="mySwiper" space-between="30" centered-slides="true" autoplay-delay="7000"
+        autoplay-disable-on-interaction="false">
+        <swiper-slide><img src="./assets/menu.png" alt="menu img" /></swiper-slide>
+        <swiper-slide><img src="./assets/menu.png" alt="menu img" /></swiper-slide>
+        <swiper-slide><img src="./assets/menu.png" alt="menu img" /></swiper-slide>
+      </swiper-container>
+
+      <div class="mt-[39px] mb-[40px] flex items-center justify-between">
+        <h1 class="font-bold text-[32px]">Все кроссовки</h1>
+        <input type="search" placeholder="Поиск..."
+          class="py-[10px] px-[18px] rounded-lg border-[#F3F3F3] border-[2px]" />
+      </div>
+
+      <div id="wrapper" class="grid grid-cols-4"></div>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+  <script type="module" src="./app.js"></script>
+  <script type="module" src="./data.js"></script>
+</body>
+
 </html>
