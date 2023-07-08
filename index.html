@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="bg-[#90b3c8] pt-[85px]">
+    <div class="container-lg px-[60px] pt-[40px] bg-white rounded-t-[20px]">
+      <header>
+        <nav
+          class="flex items-center justify-between pb-[40px] border-b-[#EAEAEA] border-b-[1px]"
+        >
+          <div>
+            <h1 class="font-bold text-[20px]">CR7 SNEAKERS SUII</h1>
+            <p class="text-[#9D9D9D] text-[14px] mt-[-6px]">
+              Магазин лучших кроссовок
+            </p>
+          </div>
+
+          <div>
+            <button
+              class="py-[5px] px-[15px] rounded-md border-[2px] border-slate-200 active:border-slate-400"
+            >
+              🛒
+            </button>
+            <button
+              class="py-[5px] px-[15px] rounded-md border-[2px] border-slate-200 active:border-slate-400"
+            >
+              ❤️
+            </button>
+            <button
+              class="py-[5px] px-[15px] rounded-md border-[2px] border-slate-200 active:border-slate-400"
+            >
+              👤
+            </button>
+          </div>
+        </nav>
+      </header>
+
+      <main class="pt-[40px]">
+        <swiper-container
+          class="mySwiper"
+          pagination="true"
+          pagination-clickable="true"
+          navigation="true"
+          space-between="30"
+          centered-slides="true"
+          autoplay-delay="2500"
+          autoplay-disable-on-interaction="false"
+        >
+          <swiper-slide><img src="./assets/menu.png" alt="menu img" /></swiper-slide>
+          <swiper-slide><img src="./assets/menu.png" alt="menu img" /></swiper-slide>
+          <swiper-slide><img src="./assets/menu.png" alt="menu img" /></swiper-slide>
+        </swiper-container>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <script type="module" src="./app.js"></script>
+    <script type="module" src="./data.js"></script>
+  </body>
+</html>
