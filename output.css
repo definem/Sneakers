@@ -591,6 +591,10 @@ video {
   margin-top: 39px;
 }
 
+.mb-\[\] {
+  margin-bottom: ;
+}
+
 .flex {
   display: flex;
 }
@@ -653,6 +657,10 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
 }
 
 .rounded-\[20px\] {

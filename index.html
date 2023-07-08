@@ -9,7 +9,7 @@
 </head>
 
 <body class="bg-[#90b3c8] pt-[85px]">
-  <div id="modal" class="hidden p-[30px] h-[100vh] w-[385px] absolute right-0 top-0 bg-white z-50">
+  <div id="modal" style="overflow-y: scroll;" class="hidden p-[30px] h-[100vh] w-[385px] absolute right-0 top-0 bg-white z-50">
     <h1 class="font-bold text-[24px] mb-[30px]">Корзина</h1>
 
     <div class="korzina-wrappper">
@@ -31,7 +31,7 @@
       </div>
     </div>
   </div>
-  <div id="blur" class=" hidden h-[100vh] w-[100%] absolute top-0 left-0 bg-[rgba(0,0,0,0.5)] z-10 backdrop-blur-[2px]"></div>
+  <div id="blur" class="hidden h-[100vh] w-[100%] absolute top-0 left-0 bg-[rgba(0,0,0,0.5)] z-10 backdrop-blur-[2px]"></div>
 
   <div class="container-lg px-[60px] pt-[40px] bg-white rounded-t-[20px]">
     <header>
@@ -44,7 +44,7 @@
         </div>
 
         <div>
-          <button class="py-[5px] px-[15px] rounded-md border-[2px] border-slate-200 active:border-slate-400">
+          <button id="korzinka" class="py-[5px] px-[15px] rounded-md border-[2px] border-slate-200 active:border-slate-400">
             🛒
           </button>
           <button class="py-[5px] px-[15px] rounded-md border-[2px] border-slate-200 active:border-slate-400">
