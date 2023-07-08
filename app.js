@@ -50,7 +50,8 @@ function render() {
 }
 
 function renderToModal() {
-  sneakers.renderToModal.map((tapchka) => {
+  let res="";
+  sneakersKorzinka.map((tapchka) => {
     res += `
         <div
         class="border-[#F3F3F3] border-[2px] rounded-[20px] py-[10px] px-[20px]  overflow-hidden flex items-center justify-between">
@@ -69,12 +70,14 @@ function renderToModal() {
 
       </div>
     `;
-  })
+  });
+
+  korzinaWrapper.innerHTML = res
 }
 
 wrapper.addEventListener("click", (e) => {
   if (e.target.id.includes("btn")) {
-    let id = +e.target.getAttribute("data-id")
+    let id = +e.target.getAttribute("data-id");
     sneakersKorzinka.push(sneakers[id]);
     // console.log(sneakersKorzinka)
     renderToModal();
