@@ -856,10 +856,6 @@ swiper-slide img {
      object-fit: cover;
 }
 
-.active\:border:active {
-  border-width: 1px;
-}
-
 .active\:border-slate-300:active {
   --tw-border-opacity: 1;
   border-color: rgb(203 213 225 / var(--tw-border-opacity));
