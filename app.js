@@ -40,6 +40,7 @@ function render() {
                 <button data-id="${tapchka.id}" id="btn" class="border-[#F3F3F3] border-[2px] px-[14px] py-[6px] rounded-lg flex items-center justify-center active:border-slate-300">
                   +
                 </button>
+                <img src="./" alt="iconde bitta"/>
               </div>
             </div>
           </div>
@@ -63,10 +64,14 @@ function renderToModal() {
           <h1 class="text-[15px] mb-[14px]">${tapchka.name}</h1>
           <p class="mt-[-9px] text-[14px] font-bold">${tapchka.price}</p>
         </div>
-        <button
+
+        ${tapchka.isLiked === true ? `<img src="./" alt="check"/>` :
+        `<button
           class="border-[#F3F3F3] border-[2px] px-[10px] py-[6px] rounded-lg flex items-center justify-center  active:border-slate-300">
           ➕
-        </button>
+        </button>`
+
+        }
 
       </div>
     `;
@@ -78,9 +83,11 @@ function renderToModal() {
 wrapper.addEventListener("click", (e) => {
   if (e.target.id.includes("btn")) {
     let id = +e.target.getAttribute("data-id");
+    sneakers[id].isLiked = true;
     sneakersKorzinka.push(sneakers[id]);
-    // console.log(sneakersKorzinka)
     renderToModal();
+    
+    console.log(sneakers)
   }
 });
 

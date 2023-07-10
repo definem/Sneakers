@@ -522,6 +522,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -534,8 +538,16 @@ video {
   right: 0px;
 }
 
+.top-\[50\%\] {
+  top: 50%;
+}
+
 .top-0 {
   top: 0px;
+}
+
+.top-\[\] {
+  top: ;
 }
 
 .z-10 {
@@ -589,10 +601,6 @@ video {
 
 .mt-\[39px\] {
   margin-top: 39px;
-}
-
-.mt-7 {
-  margin-top: 1.75rem;
 }
 
 .flex {
@@ -781,10 +789,6 @@ video {
 
 .pt-\[85px\] {
   padding-top: 85px;
-}
-
-.pt-7 {
-  padding-top: 1.75rem;
 }
 
 .text-\[13px\] {
