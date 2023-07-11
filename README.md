@@ -1,2 +1,3 @@
 ## Sneakers
-_Layout from figma.*TailwindCss* *JavaScript* *HTML*_
+_Layout from figma.
+*TailwindCss* *JavaScript* *HTML*_
