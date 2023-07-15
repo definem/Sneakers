@@ -1,3 +1,4 @@
+// <!-- ---- Bismillah ---- -->
 export const sneakers = [
   {
     id: 1,
