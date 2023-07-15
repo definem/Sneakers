@@ -1,3 +1,4 @@
+// <!-- ---- Bismillah ---- -->
 import { sneakers } from "./data.js";
 const wrapper = document.getElementById("wrapper");
 const modal = document.getElementById("modal");
